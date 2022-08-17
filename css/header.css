@@ -1,0 +1,122 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__content {
+    display: flex;
+    gap: 3.5rem;
+    align-self: flex-start;
+}
+
+.icon {
+    color: var(--green-highlight)
+}
+
+.header__title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 100;
+    transition: all .3s ease-in-out; 
+}
+
+span {
+    color: var(--green-highlight);
+}
+
+.search {
+    display: flex;
+    width: 300px;
+    height: 20px;
+    align-items: center;
+    background-color: var(--input-bg);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.search__input {
+    outline: none;
+    border: 2px solid transparent;
+    background-color: transparent;
+    padding: 0.75rem 1rem 0.25rem;
+    flex-grow: 3;
+    font-family: inherit;
+    color: inherit;
+}
+
+.search__button {
+    flex-grow: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--green-highlight);
+}
+
+a {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+a:visited {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.header__btn-login {
+    color: var(--green-highlight);
+}
+
+.header__btn-login:hover {
+    color: var(--bg-color);
+    background-color: var(--green-highlight);
+    border: 1px solid var(--bg-color);
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .header, .header__content{
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .search {
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    .search__input,
+    .search__button {
+        flex-grow: initial;
+    }
+
+    .search__button {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1249px) {
+    .header {
+        gap: 1.2rem;
+        align-items: center;
+    }
+    .header__content {
+        gap: 1.2rem;
+    }
+
+    .header__title {
+        width: 125px;
+        height: auto;
+    }
+
+    .search {
+        width: 325px;
+    }
+}

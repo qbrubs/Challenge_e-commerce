@@ -1,0 +1,101 @@
+@media screen and (min-width: 0) {
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 5rem 0;
+    background-color: #202020;
+}
+
+.login-title {
+    font-family: inherit;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--green-highlight);
+}
+
+.login-email, .login-password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+}
+
+.login-email__input, .login-password__input {
+    border: none;
+    width: 85vw;
+    height: 10vw;
+    padding: 1rem;
+    font-size: 16px;
+    box-shadow: 0 3px 1px 0 var(--green-highlight);
+}
+
+.login-email__input::placeholder, .login-password__input::placeholder {
+    font-size: 16px;
+    color: var(--green-highlight);
+    padding: .25rem;
+
+}
+
+.input-error {
+    margin-top: 1rem;
+}
+
+.login-btn {
+    width: 50vw;
+    height: 15vw;
+    border: none;
+    font-size: 18px;
+    color: var(--green-highlight);
+    background-color: var(--bg-color);
+    border: 1px solid var(--green-highlight);
+}
+
+.login-btn:hover {
+    color: var(--bg-color);
+    background-color: var(--green-highlight);
+    border: 1px solid var(--bg-color);
+}
+}
+
+@media screen and (min-width: 768px) {
+    .login-email__input, .login-password__input {
+        width: 40vw;
+        height: 5vw;
+    }
+
+    .login-btn {
+        width: 15vw;
+        height: 5vw;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .login-email__input, .login-password__input {
+        width: 30vw;
+        height: 5vw;
+        padding: 0 1rem;
+    }
+
+    .login-btn {
+        width: 15vw;
+        height: 4vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .login-email__input, .login-password__input {
+        width: 25vw;
+        height: 3vw;
+        padding: 0;
+    }
+
+    .login-btn {
+        width: 25vw;
+        height: 3vw;
+        font-size: 19px;
+    }
+}
+

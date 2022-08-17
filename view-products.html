@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>GeekJedi</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+
+    <!--header-->
+    <header class="header container">
+            <div class="header__content">
+                <a class="header__link" title="Home Geek Jedi" href="index.html">
+                    <h1 class="header__title"><i class="fa-solid fa-jedi icon"></i>Geek<span>Jedi</span></h1>
+                </a>
+
+               <form action="" class="search">
+                    <input type="text" class="search__input" placeholder="What do you wish to find?">
+                    <button type="submit" class="search__button"><i class="fa-solid fa-magnifying-glass icon"></i></button>
+               </form>
+
+               <a class="header__btn-login btns" role="button" href="login.html">Login</a>
+            </div>
+    </header>
+
+    <main>
+        <section class="first-products">
+            <div class="products__container">
+                <div class="products__content">
+                    <h2 class="product__title">All products</h2>
+                </div>
+                <div class="products__content--container" data-product>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <section class="footer container">
+            <div class="footer_content">
+                <a class="header__link" title="Home Geek Jedi" href="index.html">
+                    <h1 class="footer__title"><i class="fa-solid fa-jedi icon"></i>Geek<span>Jedi</span></h1>
+                </a>
+            </div>
+            <div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">About</a>
+                            <a href="#" class="footer__nav-link green">Privacy</a>
+                            <a href="#" class="footer__nav-link">Fidelity</a>
+                            <a href="#" class="footer__nav-link green">Stores</a>
+                            <a href="#" class="footer__nav-link">Franchises</a>
+                            <a href="#" class="footer__nav-link green">Advertise</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <form action="" class="footer__form form">
+                <p class="footer__form-title"><span class="footer__form-span">Contact Us!</span><br>Send us a message and we will contact you soon.</p>
+                    
+                    <input type="text" class="footer__form-text footer__form-input" id="contact__name" name="name" placeholder="Write your name" data-tipo="name" maxlength="25" required>
+                    <label for="contact__name" class="footer__form-label">Name</label>
+                    <span class="form__fieldset-error"></span>
+
+                    <textarea name="message" class="footer__form-text footer__form-textarea" id="contact__message" cols="30" rows="10" placeholder="Write your message" data-tipo="mensagem" maxlength="200" required></textarea>
+                    <label for="contact__message" class="footer__form-label">Message</label>
+                    <span class="form__fieldset-error"></span>
+
+                    <button type="submit" class="footer__form-button btns">Send Message</button>
+                 
+            </form>
+        </section>
+
+        <div class="copyright">
+            <h3 class="by">&#169;Coded by <a href="https://www.linkedin.com/in/qbrubs/"> <span>  Bruna Nascimento</span></a></h3>
+        </div>
+    </footer>
+    <!-- end footer-->
+</body>
+</html>

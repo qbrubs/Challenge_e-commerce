@@ -1,0 +1,64 @@
+:root {
+    --bg-color: #000000;
+    --input-placeholder: #D4D4D4;
+    --input-bg: #EFEFEF;
+    --highlight: #FFFF;
+    --green-highlight: #9acd32;
+    --bg-contact: #EAF2FD;
+    --font: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+}
+
+.container {
+    padding: 1rem;
+}
+
+.btns {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    outline: none;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border: 1px solid var(--green-highlight);
+    border-radius: 2px 5px 12px 5px var(--highlight);
+    transition: 0.5s ease-in-out;
+    color: var(--green-highlight);
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .container {
+        padding: 2rem;
+    }
+
+    .btns {
+        font-size: 1rem;
+        padding: 0.5rem;
+        width: 175px;
+        height: 42px;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1249px) {
+    .container {
+        padding: 2.5rem;
+    }
+
+    .btns {
+        width: 210px;
+        height: 45px;
+        padding: 0.75rem 1rem;
+    }
+}
+
