@@ -9,16 +9,19 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/all.css" rel="stylesheet" >
-    <link href="css/style.css" rel="stylesheet" >
-    <link href="css/header.css" rel="stylesheet" >
-    <link href="css/banner.css" rel="stylesheet" >
-    <link href="css/products.css" rel="stylesheet" >
-    <link href="css/footer.css" rel="stylesheet" >
+    <link href="./assets/css/reset.css" rel="stylesheet">
+    <link href="./assets/css/all.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/header.css" rel="stylesheet">
+    <link href="./assets/css/banner.css" rel="stylesheet" >
+    <link href="./assets/css/products.css" rel="stylesheet" >
+    <link href="./assets/css/footer.css" rel="stylesheet" >
+    <link rel="stylesheet" href="./assets/css/dark-mode.css">
 </head>
 <body>
-
+    <!--darkmode-->
+    <div id="theme">
+        <button id="toggle-btn" class="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
     <!--header-->
     <header class="header container">
             <div class="header__content">
@@ -27,12 +30,12 @@
                 </a>
 
                <form action="" class="search">
-                    <input type="text" class="search__input" placeholder="What do you wish to find?">
+                    <input type="text" class="search__input" data-search-input placeholder="What do you wish to find?">
                     <button type="submit" class="search__button"><i class="fa-solid fa-magnifying-glass icon"></i></button>
                </form>
             </div>
 
-            <a class="header__btn-login btns" role="button" href="login.html">Login</a>
+            <a class="header__btn-login btns" role="button" href="./assets/html/login.html">Login</a>
     </header>
     <!--end header-->
     <!--banner-->
@@ -40,179 +43,157 @@
         <section class="banner container" id="main">
             <div class="banner__content">
                 <h1 class="banner__title">August offers</h1>
-                <h2 class="banner__description">All products 40% off</h2>
-                <a href="./products.html" class="banner__button btns" role="button">See products</a>
+                <h2 class="banner__description">All Funko Pop with 40% off</h2>
+                <a href="#funko" class="banner__button btns" role="button">See funko's</a>
             </div>
         </section>
     <!--end banner-->
 
     <!--products-->
-        <section class="first-products">
+        <section class="first-products" data-products>
             <div class="products__container">
                 <div class="products__content">
                     <h2 class="product__title">Mugs</h2>
-                    <a href="product-view.html"><button class="product__btn btns">See All</button></a>
+                    <a href="./assets/html/all-products.html"><button class="product__btn btns">See All</button></a>
                 </div>
-
                 <div class="products__content--container" data-product>
                     <div class="products--content">
-                        <img src="./img/1mug.jfif" alt="Star Wars Stormstrooper Mug" class="products__img">
+                        <img src="./assets/img/1mug.jfif" alt="Star Wars Stormstrooper Mug" class="products__img">
                         <h3 class="products__title">Stormtrooper Mug</h3>
-                        <h4 class="products__price">$20,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <h4 class="products__price">$22,00</h4>
+                        <a href="./assets/html/similar-products.html"><button class="products__btn btns">See product</button></a>
                     </div>
-                
-
                     <div class="products--content">
-                        <img src="./img/2mug.webp" alt="Star Wars Darth Vader Mug" class="products__img">
+                        <img src="./assets/img/2mug.webp" alt="Star Wars Darth Vader Mug" class="products__img">
                         <h3 class="products__title">Darth Vader Mug</h3>
-                        <h4 class="products__price">$20,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <h4 class="products__price">$22,00</h4>
+                        <a href=".//assets/html/products-details/products2.html"><button class="products__btn btns">See product</button></a>
                     </div>
-
                     <div class="products--content">
-                        <img src="./img/3mug.jpg" alt="Star Wars Yoda Mug" class="products__img">
+                        <img src="./assets/img/3mug.jpg" alt="Star Wars Yoda Mug" class="products__img">
                         <h3 class="products__title">Yoda Mug</h3>
-                        <h4 class="products__price">$20,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <h4 class="products__price">$22,00</h4>
+                        <a href=".//assets/html/products-details/products3.html"><button class="products__btn btns">See product</button></a>
                     </div>
-
                     <div class="products--content">
-                        <img src="./img/4mug.jfif" alt="Star Wars R2D2 Mug" class="products__img">
+                        <img src="./assets/img/4mug.jfif" alt="Star Wars R2D2 Mug" class="products__img">
                         <h3 class="products__title">R2D2 Mug</h3>
                         <h4 class="products__price">$20,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <a href=".//assets/html/products-details/products4.html"><button class="products__btn btns">See product</button></a>
                     </div>
-
                     <div class="products--content">
-                        <img src="./img/5mug.jpg" alt="Star Wars C3-PO Mug" class="products__img">
+                        <img src="./assets/img/5mug.jpg" alt="Star Wars C3-PO Mug" class="products__img">
                         <h3 class="products__title">C3P0 Mug</h3>
-                        <h4 class="products__price">$20,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <h4 class="products__price">$18,00</h4>
+                        <a href=".//assets/html/products-details/products5.html"><button class="products__btn btns">See product</button></a>
                     </div>
-
                     <div class="products--content">
-                        <img src="./img/6mug.jfif" alt="Star Wars Mug" class="products__img">
+                        <img src="./assets/img/6mug.jfif" alt="Star Wars Mug" class="products__img">
                         <h3 class="products__title">Star Wars Mug</h3>
-                        <h4 class="products__price">$20,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <h4 class="products__price">$16,00</h4>
+                        <a href=".//assets/html/products-details/products6.html"><button class="products__btn btns">See product</button></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="second-products">
+        <section class="second-products" data-products>
             <div class="products__container">
                 <div class="products__content">
-                    <h2 class="product__title">Funko pop</h2>
-                    <a href="product-view.html"><button class="product__btn btns">See All</button></a>
+                    <h2 class="product__title" id="funko">Funko pop</h2>
+                    <a href="./assets/html/all-products.html"><button class="product__btn btns">See All</button></a>
                 </div>
-
                 <div class="products__content--container">
                     <div class="products--content">
-                        <img src="./img/1funko.jpg" alt="Star Wars Ben Solo Funko" class="products__img">
+                        <img src="./assets/img/1funko.jpg" alt="Star Wars Ben Solo Funko" class="products__img">
                         <h3 class="products__title">Ben Solo</h3>
                         <h4 class="products__price">$16,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <a href="./assets/html/products-details/products7.html"><button class="products__btn btns">See product</button></a>
                     </div>
-
                     <div class="products--content">
-                        <img src="./img/2funko.jpg" alt="Star Wars Yoda Funko" class="products__img">
+                        <img src="./assets/img/2funko.jpg" alt="Star Wars Yoda Funko" class="products__img">
                         <h3 class="products__title">Yoda</h3>
                         <h4 class="products__price">$16,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <a href="./assets/html/products-details/products8.html"><button class="products__btn btns">See product</button></a>
                     </div>
-
                     <div class="products--content">
-                        <img src="./img/3funko.jfif" alt="Star Wars Stormtrooper Funko" class="products__img">
+                        <img src="./assets/img/3funko.jfif" alt="Star Wars Stormtrooper Funko" class="products__img">
                         <h3 class="products__title">Stormtrooper</h3>
                         <h4 class="products__price">$16,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <a href="./assets/html/products-details/products9.html"><button class="products__btn btns">See product</button></a>
                     </div>
-
                     <div class="products--content">
-                        <img src="./img/4funko.jfif" alt="Star Wars Darth Vader Funko" class="products__img">
+                        <img src="./assets/img/4funko.jfif" alt="Star Wars Darth Vader Funko" class="products__img">
                         <h3 class="products__title">Darth Vader</h3>
                         <h4 class="products__price">$16,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <a href="./assets/html/products-details/products10.html"><button class="products__btn btns">See product</button></a>
                     </div>
-
                     <div class="products--content">
-                        <img src="./img/5funko.jpg" alt="Star Wars Darth Sidious Funko" class="products__img">
+                        <img src="./assets/img/5funko.jpg" alt="Star Wars Darth Sidious Funko" class="products__img">
                         <h3 class="products__title">Darth Sidious</h3>
                         <h4 class="products__price">$16,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <a href="./assets/html/products-details/products11.html"><button class="products__btn btns">See product</button></a>
                     </div>
-
                     <div class="products--content">
-                        <img src="./img/6funko.jfif" alt="Star Wars Luke Skywalker with Yoda Funko" class="products__img">
+                        <img src="./assets/img/6funko.jfif" alt="Star Wars Luke Skywalker with Yoda Funko" class="products__img">
                         <h3 class="products__title">Luke Skywalker</h3>
                         <h4 class="products__price">$16,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <a href="./assets/html/products-details/products12.html"><button class="products__btn btns">See product</button></a>
                     </div>
             </div>
         </section>
 
-        <section class="third-products">
+        <section class="third-products" data-products>
             <div class="products__container">
                 <div class="products__content">
                     <h2 class="product__title">Others</h2>
-                    <a href="product-view.html"><button class="product__btn btns">See All</button></a>
+                    <a href="./assets/html/all-products.html"><button class="product__btn btns">See All</button></a>
                 </div>
-
                 <div class="products__content--container">
                     <div class="products--content">
-                        <img src="./img/1others.webp" alt="Star Wars Baby Yoda" class="products__img">
+                        <img src="./assets/img/1others.webp" alt="Star Wars Baby Yoda" class="products__img">
                         <h3 class="products__title">Baby Yoda</h3>
                         <h4 class="products__price">$35,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <a href="./assets/html/products-details/products13.html"><button class="products__btn btns">See product</button></a>
                     </div>
-
                     <div class="products--content">
-                        <img src="./img/2others.jpg" alt="Star Wars Lightsaber" class="products__img">
+                        <img src="./assets/img/2others.jpg" alt="Star Wars Lightsaber" class="products__img">
                         <h3 class="products__title">Lightsaber</h3>
                         <h4 class="products__price">$15,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <a href="./assets/html/products-details/products14.html"><button class="products__btn btns">See product</button></a>
                     </div>
-
                     <div class="products--content">
-                        <img src="./img/3others.jpg" alt="Star Wars Millennium Falcon Lego" class="products__img">
+                        <img src="./assets/img/3others.jpg" alt="Star Wars Millennium Falcon Lego" class="products__img">
                         <h3 class="products__title">Millennium Falcon</h3>
                         <h4 class="products__price">$50,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <a href="./assets/html/products-details/products15.html"><button class="products__btn btns">See product</button></a>
                     </div>
-
                     <div class="products--content">
-                        <img src="./img/4others.webp" alt="Star Wars Darth Vader Toy" class="products__img">
+                        <img src="./assets/img/4others.webp" alt="Star Wars Darth Vader Toy" class="products__img">
                         <h3 class="products__title">Darth Vader Toy</h3>
                         <h4 class="products__price">$25,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <a href="./assets/html/products-details/products16.html"><button class="products__btn btns">See product</button></a>
                     </div>
-
                     <div class="products--content">
-                        <img src="./img/5others.webp" alt="Star Wars Lamp" class="products__img">
+                        <img src="./assets/img/5others.webp" alt="Star Wars Lamp" class="products__img">
                         <h3 class="products__title">Star Wars Lamp</h3>
                         <h4 class="products__price">$26,90</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <a href="./assets/html/products-details/products17.html"><button class="products__btn btns">See product</button></a>
                     </div>
-
                     <div class="products--content">
-                        <img src="./img/6others.jpg" alt="Star Wars Door Mat" class="products__img">
+                        <img src="./assets/img/6others.jpg" alt="Star Wars Door Mat" class="products__img">
                         <h3 class="products__title">Door Mat</h3>
                         <h4 class="products__price">$10,00</h4>
-                        <button class="products__btn btns">See product <i class="fa-solid fa-arrow-right"></i></button>
+                        <a href="./assets/html/products-details/products18.html"><button class="products__btn btns">See product</button></a>
                     </div>
+                </div>
+            </div>
+        </section>
     <!--end products-->
     </main>
-
     <!--footer-->
     <footer>
         <section class="footer container">
-            <div class="footer_content">
-                <a class="header__link" title="Home Geek Jedi" href="index.html">
-                    <h1 class="footer__title"><i class="fa-solid fa-jedi icon"></i>Geek<span>Jedi</span></h1>
-                </a>
-            </div>
             <div>
                 <nav class="footer__nav">
                     <ul class="footer__nav-list">
@@ -223,34 +204,24 @@
                             <a href="#" class="footer__nav-link green">Stores</a>
                             <a href="#" class="footer__nav-link">Franchises</a>
                             <a href="#" class="footer__nav-link green">Advertise</a>
+                            <a href="./assets/html/contact.html" class="footer__nav-link">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-
-            <form action="" class="footer__form form">
-                <p class="footer__form-title"><span class="footer__form-span">Contact Us!</span><br>Send us a message and we will contact you soon.</p>
-                    
-                    <input type="text" class="footer__form-text footer__form-input" id="contact__name" name="name" placeholder="Write your name" data-tipo="name" maxlength="25" required>
-                    <label for="contact__name" class="footer__form-label">Name</label>
-                    <span class="form__fieldset-error"></span>
-
-                    <textarea name="message" class="footer__form-text footer__form-textarea" id="contact__message" cols="30" rows="10" placeholder="Write your message" data-tipo="mensagem" maxlength="200" required></textarea>
-                    <label for="contact__message" class="footer__form-label">Message</label>
-                    <span class="form__fieldset-error"></span>
-
-                    <button type="submit" class="footer__form-button btns">Send Message</button>
-                 
-            </form>
+            <div class="footer_content">
+                <a class="header__link" title="Home Geek Jedi" href="index.html">
+                    <h1 class="footer__title"><i class="fa-solid fa-jedi icon"></i>Geek<span>Jedi</span></h1>
+                </a>
+            </div>
+            <div class="copyright">
+                <h3 class="by">&#169;Coded by <a href="https://www.linkedin.com/in/qbrubs/"> <span>  Bruna Nascimento</span></a></h3>
+            </div>
         </section>
-
-        <div class="copyright">
-            <h3 class="by">&#169;Coded by <a href="https://www.linkedin.com/in/qbrubs/"> <span>  Bruna Nascimento</span></a></h3>
-        </div>
     </footer>
     <!-- end footer-->
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
+    </div>
+    <!--div end of darkmode-->
+    <script src="./assets/js/darkMode.js"></script>
 </body>
 </html>

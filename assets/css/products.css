@@ -1,0 +1,139 @@
+@media screen and (min-width: 0) {
+.products__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+    width: 100%;
+    font-family: var(--font);
+    position: relative;
+}
+
+.products__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.product__title {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--dark-grey);
+}
+
+.product__btn {
+    color: var(--green-highlight);
+    font-size: 15px;
+    height: 5vh;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid var(--green-highlight);
+}
+
+.product__btn:hover {
+    color: var(--bg-color);
+    background-color: var(--green-highlight);
+    border: 1px solid var(--bg-color);
+}
+
+.products__content--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.products__img {
+    width: 45vw;
+}
+
+.products__img, 
+.products__section--title, 
+.product__price {
+    margin-bottom: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.products__title {
+    font-weight: 400;
+    font-size: 15px;
+    color: #5e8151;
+    text-align: center;
+}
+
+.products__price {
+    font-weight: bold;
+    color: var(--dark-grey);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.products__btn {
+    background-color: transparent;
+    border: none;
+    color: var(--green-highlight);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.products__icon {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.products__icon-btn {
+    color: var(--green-highlight);
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+}
+
+@media screen and (min-width: 768px) {
+    .products__content--container {
+        width: 80%;
+    }
+
+    .products__img {
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .products__content--container {
+        padding-bottom: 4rem;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .products__content {
+        width: 70%;
+    }
+
+    .product__title {
+        font-size: 30px;
+    }
+
+    .products__content--container {
+        gap: 1.25rem;
+        padding: 1rem;
+        width: 70%;
+    }
+
+    .products__img {
+        width: 10vw;
+    }
+
+    .products__btn {
+        width: 10vw;
+        height: 5vh;
+    }
+}

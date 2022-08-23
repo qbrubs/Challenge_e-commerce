@@ -1,0 +1,14 @@
+.products__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product__title {
+    margin-top: 20px;
+}
+
+.products__btn {
+    background-color: transparent;
+}

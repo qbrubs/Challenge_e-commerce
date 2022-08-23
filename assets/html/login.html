@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>GeekJedi | Login </title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/all.css" rel="stylesheet" >
+    <link href="../css/style.css" rel="stylesheet" >
+    <link href="../css/header.css" rel="stylesheet" >
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link href="../css/banner.css" rel="stylesheet" >
+    <link href="../css/login.css" rel="stylesheet" >
+    <link href="../css/footer.css" rel="stylesheet" >
+</head>
+<body>
+    <!--darkmode-->
+    <div id="theme">
+        <button id="toggle-btn" class="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    <!--header-->
+    <header class="header container">
+        <div class="header__content">
+            <a class="header__link" title="Home Geek Jedi" href="../../index.html">
+                <h1 class="header__title"><i class="fa-solid fa-jedi icon"></i>Geek<span>Jedi</span></h1>
+            </a>
+
+           <form action="" class="search">
+                <input type="text" class="search__input" data-search-input placeholder="What do you wish to find?">
+                <button type="submit" class="search__button"><i class="fa-solid fa-magnifying-glass icon"></i></button>
+           </form>
+        </div>
+
+        <a class="header__btn-login btns" role="button" href="./login.html">Login</a>
+    </header>
+
+    <main>
+        <section class="login">
+            <form action="" class="login-container">
+                <h2 class="login-title">Login</h2>
+                <fieldset class="login-email">
+                    <input type="email" class="login-email__input" id="login-email__input" placeholder="Write your email" data-tipo="email" required>
+                    <span class="input-error" data-error="email">Please, type a valid email.</span>
+                </fieldset>
+                <fieldset class="login-password">
+                    <input type="password" class="login-password__input" id="login-password__input" placeholder="Write your password" data-tipo="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[!@#$%^&*_=+-]).{8,16}$" required>
+                    <span class="input-error" data-error="password">Please, type a valid password.</span>
+                </fieldset>
+                <a href="./products.html"><button class="login-btn btns" id="login-btn" disabled>Enter</button></a>
+            </form>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <section class="footer container">
+            <div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">About</a>
+                            <a href="#" class="footer__nav-link green">Privacy</a>
+                            <a href="#" class="footer__nav-link">Fidelity</a>
+                            <a href="#" class="footer__nav-link green">Stores</a>
+                            <a href="#" class="footer__nav-link">Franchises</a>
+                            <a href="#" class="footer__nav-link green">Advertise</a>
+                            <a href="./assets/html/contact.html" class="footer__nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer_content">
+                <a class="header__link" title="Home Geek Jedi" href="index.html">
+                    <h1 class="footer__title"><i class="fa-solid fa-jedi icon"></i>Geek<span>Jedi</span></h1>
+                </a>
+            </div>
+            <div class="copyright">
+                <h3 class="by">&#169;Coded by <a href="https://www.linkedin.com/in/qbrubs/"> <span>  Bruna Nascimento</span></a></h3>
+            </div>
+        </section>
+    </footer>
+    <!-- end footer-->
+    </div>
+    <!--div end of darkmode-->
+    <script src="../js/forms/login-validate.js"></script>
+    <script src="../js/darkMode.js"></script>
+
+</body>
+</html>

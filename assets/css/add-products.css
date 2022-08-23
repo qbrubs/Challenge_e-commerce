@@ -1,0 +1,137 @@
+@media screen and (min-width: 0) {
+
+    .product-add__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .product-add__title {
+        font-size: 25px;
+        font-weight: 500;
+        color: var(--green-highlight);
+        margin-top: 15px;
+    }
+
+    .product-add__content {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        padding: 1rem;
+        gap: .25rem;
+        
+    }
+
+    .product__add-preview{
+        height: 176px;
+        margin: 8px;
+        width: 176px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--green-highlight);
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .product-add__img-device--label {
+        color: var(--green-highlight);
+        border: 1px solid var(--green-highlight);
+        font-family: inherit;
+        padding: 19px 16px;
+        text-align: center;
+        width: 90%;
+        gap: .25rem;
+    }
+
+    .product-add__img-device--label:hover {
+        cursor: pointer;
+    }
+
+    .product-add__img-device {
+        display: none;
+        padding: 19px 16px;
+        width: 90%;
+        gap: .25rem;
+    }
+    
+    label {
+        color: var(--green-highlight);
+    }
+
+    .product-add__input {
+        border: none;
+        height: 5vw;
+        box-shadow: 0 3px 1px 0 var(--green-highlight);
+    }
+
+    .product-add__input::placeholder {
+        font-size: 16px;
+        color: var(--grey);
+    }
+
+    .product-add__btn {
+        width: 95vw;
+        height: 10vw;
+        background-color: transparent;
+        color: var(--green-highlight);
+        border-color: var(--green-highlight);
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .product-add__btn {
+        width: 90vw;
+    }
+
+    .product__add-preview{
+        height: 230px;
+        width: 230px;
+    }
+
+    .product-add__img-device--label {
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .product-add__input {
+        font-size: 16px;
+    }
+
+    .product__add-preview{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product-add__content {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding: .25rem;
+        gap: 1rem;
+    }
+
+    .product-add__input {
+        border: none;
+        height: 2vw;
+    }
+
+    .product-add__btn {
+        width: 40%;
+        font-size: 20px;
+        height: 20%;
+    }
+
+    .product__add-preview{
+        height: 400px;
+        width: 400px;
+    }
+}

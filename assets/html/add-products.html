@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>GeekJedi</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/all.css" rel="stylesheet" >
+    <link href="../css/style.css" rel="stylesheet" >
+    <link href="../css/header.css" rel="stylesheet" >
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link href="../css/banner.css" rel="stylesheet" >
+    <link href="../css/add-products.css" rel="stylesheet" >
+    <link href="../css/footer.css" rel="stylesheet" >
+</head>
+<body>
+    <!--darkmode-->
+    <div id="theme">
+        <button id="toggle-btn" class="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    <!--header-->
+    <!--header-->
+    <header class="header container">
+        <div class="header__content">
+            <a class="header__link" title="Home Geek Jedi" href="../../index.html">
+                <h1 class="header__title"><i class="fa-solid fa-jedi icon"></i>Geek<span>Jedi</span></h1>
+            </a>
+
+           <form action="" class="search">
+                <input type="text" class="search__input" data-search-input placeholder="What do you wish to find?">
+                <button type="submit" class="search__button"><i class="fa-solid fa-magnifying-glass icon"></i></button>
+           </form>
+        </div>
+
+        <a class="header__btn-login btns" role="button" href="./products.html">Menu Admin</a>
+    </header>
+<!--end header-->
+    <main>
+        <form action="products.html" class="product-add" data-form>
+            <div class="product-add__container">
+                <h2 class="product-add__title">New product</h2>
+                <img src="../img/preview.png" alt="Image preview" class="product__add-preview" id="product__add-preview">
+                <fieldset class="product-add__content">
+                    <label for="product-add__img" id="product-add__img">Image URL</label>
+                    <input type="url" name="product-add__img" class="product-add__input" id="product-add__image-url" placeholder="http://..."  data-image>
+                    <p>Or</p>
+                    <label for="product-add__img-device"class="product-add__img-device--label">Image File</label>
+                    <input type="file" name="product-add__img" accept="image/jpeg, image/png" id="product-add__img-device" class="product-add__img-device btns" data-type="image" data-image>
+                    <span class="input-error" data-error="image">This field is not valid</span>
+                </fieldset>
+                <fieldset class="product-add__content">
+                    <label for="product-add__type">Type</label>
+                    <input type="text" name="product-add__type" class="product-add__input" id="product-add__type" placeholder="Funko" maxlength="15" data-type data-type="type" required>
+                    <span class="input-error" data-error="type">This field is not valid</span>
+                </fieldset>
+                <fieldset class="product-add__content">
+                    <label for="product-add__name">Name</label>
+                    <input type="text" name="product-add__name" class="product-add__input" id="product-add__name" placeholder="Darth Vader Figure" maxlength="15" data-name data-type="name" required>
+                    <span class="input-error" data-error="name">This field is not valid</span>
+                </fieldset>
+                <fieldset class="product-add__content">
+                    <label for="product-add__price">Price</label>
+                    <input type="text" name="product-add__price" class="product-add__input" id="product-add__price" placeholder="$25,00" maxlength="10" data-price data-type="price" required>
+                    <span class="input-error" data-error="price">This field is not valid</span>
+                </fieldset>
+                <fieldset class="product-add__content">
+                    <label for="product-add__description">Description</label>
+                    <input type="text" name="product-add__description" class="product-add__input" id="product-add__description" placeholder="This product is a..." maxlength="150" data-description data-type="description" required>
+                    <span class="input-error" data-error="description">This field is not valid</span>
+                </fieldset>
+                <button class="product-add__btn btns">Add new product</button>
+            </div>
+        </form>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <section class="footer container">
+            <div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">About</a>
+                            <a href="#" class="footer__nav-link green">Privacy</a>
+                            <a href="#" class="footer__nav-link">Fidelity</a>
+                            <a href="#" class="footer__nav-link green">Stores</a>
+                            <a href="#" class="footer__nav-link">Franchises</a>
+                            <a href="#" class="footer__nav-link green">Advertise</a>
+                            <a href="./contact.html" class="footer__nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer_content">
+                <a class="header__link" title="Home Geek Jedi" href="index.html">
+                    <h1 class="footer__title"><i class="fa-solid fa-jedi icon"></i>Geek<span>Jedi</span></h1>
+                </a>
+            </div>
+            <div class="copyright">
+                <h3 class="by">&#169;Coded by <a href="https://www.linkedin.com/in/qbrubs/"> <span>  Bruna Nascimento</span></a></h3>
+            </div>
+        </section>
+    </footer>
+    <!-- end footer-->
+    </div>
+    <!--div end of darkmode-->
+    <script src="../js/add-products.js"></script>
+    <script src="../js/darkMode.js"></script>
+</body>
+</html>
