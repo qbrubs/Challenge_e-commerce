@@ -13,7 +13,7 @@
     flex-direction: column;
     gap: 1.8rem;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .banner__title {
@@ -26,11 +26,13 @@
 }
 
 .banner__button {
-    margin-bottom: 2rem;
-    background-color: var(--green-highlight);
     color: var(--highlight);
+    font-size: 15px;
+    height: 5vh;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--green-highlight);
     border: 1px solid var(--highlight);
-    font-weight: 700;
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 767px) {
@@ -54,6 +56,7 @@
 
     .banner__button {
         margin-bottom: 0;
+        height: 4vh;
     }
 }
 
@@ -73,6 +76,7 @@
 
     .banner__button {
         margin-bottom: 0;
+        height: 4vh;
     }
 }
 
