@@ -1,4 +1,4 @@
-![GeekJedi - Google Chrome 24_08_2022 15_50_22](https://user-images.githubusercontent.com/103202544/186437017-5e72f1bf-447d-403a-b25d-838fe04c5260.png)
+![GeekJedi - Google Chrome 24_08_2022 16_02_12](https://user-images.githubusercontent.com/103202544/186438722-10baa5d2-e7e2-4778-aea5-689f31b383cc.png)
 
 
 
@@ -31,6 +31,8 @@ This e-commerce is responsible in all devices and can be used on mobiles, tablet
 ### ⭐Extra:
 
 The first version of the site was created with a black background. However, for a better view, according to the user's taste, I decided to add a darkmode button, where the user can choose which theme is best for him.
+
+![GeekJedi - Google Chrome 24_08_2022 15_50_22](https://user-images.githubusercontent.com/103202544/186437017-5e72f1bf-447d-403a-b25d-838fe04c5260.png)
 
 ### 🔗Links: 
 
