@@ -1,32 +1,7 @@
-/*.darkMode {
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    cursor: pointer;
-    background-color: var(--green-highlight);
-    border-radius: 50%;
-    color: var(--highlight);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 3px 15px var(--highlight);
-    transition: all .1s ease-in-out;
-  }
-  
-  .darkMode:active {
-    transform: translateY(-3px);
-  }
-  
-  .darktMode i {
-    font-size: 1.4rem;
-    color: var(--grey);
-    pointer-events: none;
-  }*/
-
 #toggle-btn {
-  position: fixed;
-  right: 50px;
-  bottom: 20px;
+  position: absolute;
+  left: 85%;
+  top: 1.5%;
   width: 50px;
   height: 50px;
   padding: 5px;
@@ -39,6 +14,15 @@
   justify-content: center;
   box-shadow: 0 3px 15px var(--dark-green-highlight);
   transition: all .1s ease-in-out;
+}
+
+#toggle-btn:active {
+  transform: translateY(-3px);
+}
+
+#toggle-btn i {
+  font-size: 1.2rem;
+  pointer-events: none;
 }
 
 #toggle-btn:hover {
@@ -55,3 +39,7 @@
   background: black;
   color: #fff;
 }
+
+
+
+
