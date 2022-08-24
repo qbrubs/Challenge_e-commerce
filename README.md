@@ -39,3 +39,8 @@ The first version of the site was created with a black background. However, for 
 
 * <a href="https://qbrubs.github.io/Challenge_e-commerce/">Page</a>
 * <a href="https://linkedin.com/in/qbrubs/">LinkedIn</a>
+
+### !!!NOTE:
+
+This is not the final version of the project! I am still working on in some JS functionalities.
+
