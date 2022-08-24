@@ -1,9 +1,10 @@
-#toggle-btn {
+@media screen and (min-width: 0) {
+  #toggle-btn {
   position: absolute;
-  left: 85%;
+  left: 90%;
   top: 1.5%;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   padding: 5px;
   background-color: var(--green-highlight);
   border: none;
@@ -14,32 +15,55 @@
   justify-content: center;
   box-shadow: 0 3px 15px var(--dark-green-highlight);
   transition: all .1s ease-in-out;
+  }
+
+  #toggle-btn:active {
+    transform: translateY(-3px);
+  }
+
+  #toggle-btn i {
+    font-size: 1.2rem;
+    pointer-events: none;
+  }
+
+  #toggle-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  .dark-mode-toggle {
+    background: var(--dark-grey);
+    color: #fff;
+  }
+
+  .dark-mode-theme {
+    background: black;
+    color: #fff;
+  }
 }
 
-#toggle-btn:active {
-  transform: translateY(-3px);
+@media screen and (min-width: 768px) {
+  #toggle-btn {
+    position: fixed;
+    left: 90%;
+    top: 1.5%;
+    width: 50px;
+    height: 50px;
+  }
 }
 
-#toggle-btn i {
-  font-size: 1.2rem;
-  pointer-events: none;
+@media screen and (min-width: 992px) {
+  #toggle-btn {
+    position: fixed;
+    left: 90%;
+    top: 1.5%;
+  }
 }
 
-#toggle-btn:hover {
-  cursor: pointer;
-  opacity: 0.8;
+@media screen and (min-width: 1200px) {
+  #toggle-btn {
+    position: fixed;
+    left: 95%;
+    top: 90%;
+  }
 }
-
-.dark-mode-toggle {
-  background: var(--dark-grey);
-  color: #fff;
-}
-
-.dark-mode-theme {
-  background: black;
-  color: #fff;
-}
-
-
-
-
