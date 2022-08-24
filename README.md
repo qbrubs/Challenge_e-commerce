@@ -18,6 +18,7 @@ The requirements for the challenge were:
   * A footer with a functional contact form (in this one, for better visual organization, I decided to put the contact form inside the "contact" page that can be found in the footer);
   * An admin menu, accessible through login, where you can add, edit and remove products (I'm still working on the functionality of this page with CRUD);
   * Product description page (all products contain their own page with their respective descriptions, including a div with similar products);
+  * A functional search bar using JS CRUD (not done yet).
 
 ### 💻Technologies used:
 
